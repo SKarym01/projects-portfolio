@@ -1,0 +1,32 @@
+@use 'styles' as *;
+
+.icon {
+  width: 24px;
+  height: 24px;
+  padding: 1px;
+}
+
+.red {
+  fill: red;
+}
+
+.green {
+  fill: green;
+}
+
+.blue {
+  fill: blue;
+  stroke: blue;
+}
+
+.yellow {
+  fill: yellow;
+}
+
+.black {
+  fill: grey;
+}
+
+.white {
+  fill: white;
+}

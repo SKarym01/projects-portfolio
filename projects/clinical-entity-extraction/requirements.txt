@@ -1,0 +1,21 @@
+# Import-derived inventory, not a tested lockfile. Use a CUDA-compatible Unsloth environment.
+torch
+transformers
+datasets
+unsloth
+trl
+peft
+bitsandbytes
+accelerate
+pydantic>=2
+dkpro-cassis
+pandas
+numpy
+matplotlib
+tqdm
+dspy
+json-repair
+huggingface-hub
+ipython
+jupyterlab
+

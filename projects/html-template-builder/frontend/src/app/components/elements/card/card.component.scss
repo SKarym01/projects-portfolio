@@ -1,0 +1,28 @@
+@use 'styles' as *;
+
+$background: get-color(
+  primary2,
+  500
+); //linear-gradient(0.25turn, get-color(primary3, 500), get-color(primary2, 500));
+
+.card {
+  width: 100%;
+  background-color: get-color(secondary1, 100);
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  overflow: hidden;
+
+  .card__header {
+    background: $background;
+    color: get-color(secondary1, 100);
+    width: 100%;
+    padding: toRem(20px);
+    border-radius: $border-radius $border-radius 0 0;
+  }
+
+  .card__content {
+    width: 100%;
+    padding-top: toRem(40px);
+    padding-bottom: toRem(5px);
+  }
+}

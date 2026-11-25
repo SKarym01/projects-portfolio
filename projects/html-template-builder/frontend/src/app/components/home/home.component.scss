@@ -1,0 +1,20 @@
+@use 'styles' as *;
+
+.select {
+  max-width: toRem(20px);
+  min-width: 50vw;
+  margin: toRem(20px) auto;
+
+  &__header {
+    margin-bottom: toRem(5px);
+  }
+
+  &__body {
+    display: flex;
+  }
+
+  .select-options {
+    flex: 1;
+    padding-right: toRem(8px);
+  }
+}

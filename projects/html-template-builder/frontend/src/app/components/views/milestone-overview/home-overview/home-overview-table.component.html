@@ -1,0 +1,38 @@
+<!-- milestone-overview-table.component.html -->
+<table table>
+  <thead>
+    <tr table-row>
+      <th table-header>Template ID</th>
+      <th table-header>Title</th>
+      <th table-header>Description</th>
+      <th table-header class="table__header">Status</th>
+      <th table-header class="table__header">Last modified</th>
+      <th table-header class="table__header">Action</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr table-row *ngFor="let template of templates">
+      <td table-data>{{ template.templateId }}</td>
+      <td table-data>{{ template.templateTitle }}</td>
+      <td table-data>{{ template.description }}</td>
+      <td table-data class="table__data">{{ template.status }}</td>
+      <td table-data class="table__data">{{ template.lastModified }}</td>
+      <td table-data class="table__data">
+        <div class="table__data--action">
+          <fa-icon
+            [icon]="pencilIcon"
+            (click)="onEdit(template.templateId!)"
+            style="cursor: pointer">
+          </fa-icon>
+          <fa-icon
+            *ngIf="template.status !== 'released'"
+            [icon]="trashIcon"
+            (click)="onDelete(template.templateId!)"
+            style="cursor: pointer; color: red">
+          </fa-icon>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,23 @@
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  .error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    &__icon {
+      padding-right: 10px;
+    }
+
+    &__text {
+      font-size: toRem(24px);
+      font-weight: 800;
+      text-align: center;
+    }
+
+    &__light-text {
+      text-align: center;
+    }
+  }
+}

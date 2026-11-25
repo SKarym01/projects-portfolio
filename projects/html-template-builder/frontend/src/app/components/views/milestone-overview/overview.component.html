@@ -1,0 +1,17 @@
+<!-- milestone-overview.component.html -->
+<div appCardList>
+  <app-card class="red" headerText="Add New Email Template">
+    <app-button [size]="ButtonSize.Customized" (click)="navigateToNewTemplate()">
+      Create new email template
+    </app-button>
+  </app-card>
+
+  <app-card class="red" headerText="All Templates">
+    <app-home-overview-table></app-home-overview-table>
+  </app-card>
+</div>
+
+<!-- Show form when button is clicked -->
+<div *ngIf="showEmailForm" class="form-container">
+  <app-add-template (close)="onCancel()"></app-add-template>
+</div>

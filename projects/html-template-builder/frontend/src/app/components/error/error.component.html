@@ -1,0 +1,32 @@
+<div class="wrapper">
+  @if (errorMessage) {
+    <div class="error">
+      <div class="error__icon">
+        <app-icons
+          [size]="24"
+          [name]="IconNames.Error"
+          [color]="IconColors.Red"></app-icons>
+      </div>
+      <p class="error__text">{{ errorMessage }}</p>
+    </div>
+  }
+  @if (!errorMessage) {
+    <div class="error">
+      <div class="error__icon">
+        <app-icons
+          [size]="24"
+          [name]="IconNames.Error"
+          [color]="IconColors.Red"></app-icons>
+      </div>
+      <p class="error__text">Die angegebene URL ist momentan nicht erreichbar.</p>
+    </div>
+  }
+  <p class="error__text">Bitte versuchen Sie es später erneut.</p>
+  <br />
+  <br />
+  <p class="error__light-text">
+    Sollte der Fehler wiederholt auftreten, wenden Sie sich bitte an die Administratoren
+    unter
+    <a [href]="'mailto:' + mailAddress">{{ mailAddress }}</a> für weitere Unterstützung.
+  </p>
+</div>

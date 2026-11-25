@@ -1,0 +1,211 @@
+@use 'styles' as *;
+
+$button-base-height: toRem(40px);
+$button-base-font-size: toRem(20px);
+$button-icon-size: toRem(44px);
+$button-border-radius: toRem(4px);
+$border-radius: toRem(5px);
+
+$lightest: get-color(secondary1, 100);
+$darkest: get-color(secondary1, 500);
+
+$color-primary: get-color(primary2, 500);
+$color-primary-outline: get-color(secondary1, 100);
+$color-primary-light: get-color(primary3, 500);
+$color-secondary: get-color(primary2, 200);
+$color-secondary-dark: get-color(primary3, 500);
+$color-secondary-light: get-color(primary2, 100);
+$color-tertiary: get-color(secondary1, 100);
+$color-tertiary-dark: get-color(primary4, 100);
+$color-accent: get-color(primary1, 500);
+$color-accent-light: get-color(primary1, 100);
+$color-background: get-color(secondary1, 100);
+
+$btn-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+
+$btn-standard-width: toRem(208px);
+
+.btn {
+  min-width: $btn-standard-width;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: toRem(7px 8px 6px);
+  //padding: toRem(7px 8px 6px);
+  font-size: $button-base-font-size;
+  font-family: inherit;
+  color: $lightest;
+  background-color: $color-primary;
+  border: none;
+  border-radius: $button-border-radius;
+  cursor: pointer;
+  appearance: none;
+  text-decoration: none;
+  box-shadow: $btn-box-shadow;
+
+  &:active {
+    box-shadow: inset toRem(0px) toRem(2px) toRem(3px) rgba(#000, 0.15);
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &--icon {
+    min-width: unset;
+    border-radius: $button-icon-size;
+    padding: toRem(12px);
+    font-size: toRem(22px);
+  }
+
+  &--small {
+    min-width: $btn-standard-width * 0.5;
+    height: $btn-standard-width * 0.12;
+    padding: toRem(11px 9px 10px);
+    font-size: toRem(16px);
+  }
+
+  &--medium {
+    max-height: toRem(36px);
+    padding: toRem(18px 16px 18px);
+    background-color: white;
+    color: #33468bff;
+  }
+
+  &--large {
+    padding: toRem(24px 24px 26px);
+    font-size: toRem(20px);
+  }
+
+  &--customized {
+    min-width: $btn-standard-width * 0.5;
+    height: $btn-standard-width * 0.12;
+    padding: toRem(18px 16px 18px);
+    font-size: toRem(18px); // Reduced font size
+    margin-top: -35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap; // Prevent text wrapping
+    overflow: hidden;
+    text-overflow: ellipsis; // Add ellipsis if text is too long
+  }
+
+  &--expanded {
+    min-width: 100%;
+    display: flex;
+  }
+
+  &--accent {
+    color: $lightest;
+  }
+
+  &--tertiary {
+    color: $lightest;
+  }
+
+  &--primary {
+    &:focus-visible {
+      outline-color: $color-primary-outline;
+    }
+
+    &:hover {
+      background: linear-gradient($color-primary-light, $color-primary);
+    }
+
+    &:active {
+      background: linear-gradient($color-primary, $color-primary-light);
+    }
+
+    &:focus-visible {
+      outline-color: $lightest;
+    }
+  }
+
+  &--secondary {
+    background-color: $color-secondary;
+    color: $color-secondary-dark;
+
+    &:hover {
+      background: linear-gradient($color-secondary, $color-secondary-light);
+    }
+
+    &:active {
+      background: linear-gradient($color-secondary-light, $color-secondary);
+    }
+
+    &:focus-visible {
+      outline-color: $lightest;
+    }
+  }
+
+  &--accent {
+    background-color: $color-accent;
+
+    &:hover {
+      background: linear-gradient($color-accent, $color-accent-light);
+    }
+
+    &:active {
+      background: linear-gradient($color-accent, $color-accent-light);
+      box-shadow: inset toRem(0px) toRem(2px) toRem(3px) rgba(#000, 0.5);
+    }
+  }
+
+  &--tertiary {
+    background-color: $color-tertiary;
+    color: $darkest;
+    inset: 10px;
+
+    &:hover {
+      background: linear-gradient($color-tertiary-dark, $lightest);
+    }
+
+    &:active {
+      background: linear-gradient($lightest, $color-tertiary-dark);
+    }
+  }
+
+  &--transparent {
+    background-color: transparent;
+    color: $color-secondary-dark;
+    padding: toRem(18px 16px 18px);
+    box-shadow: unset;
+
+    &:hover {
+      //background: linear-gradient($color-tertiary-dark, $lightest);
+    }
+
+    &:active {
+      box-shadow: none;
+    }
+  }
+
+  &__label {
+    line-height: 0;
+
+    svg {
+      position: relative;
+    }
+  }
+}
+
+.icon-left-side {
+  margin-right: toRem(8px);
+  line-height: 0;
+}
+
+.icon-right-side {
+  line-height: 0;
+  margin-left: toRem(8px);
+}
+
+.link {
+  max-width: fit-content;
+  text-decoration: none;
+  &:active,
+  &:hover {
+    background: linear-gradient($lightest, $color-tertiary-dark);
+  }
+}

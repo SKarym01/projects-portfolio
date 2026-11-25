@@ -1,0 +1,104 @@
+$box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+$box-shadow-inset: inset 0px -2px 5px rgba(0, 0, 0, 0.2);
+
+$border-radius: 4px;
+
+// ########################
+// ### NCT THEME COLORS ###
+// ########################
+
+$nct-green-20: #ecf0ccff;
+$nct-green-45: #d4de8cff;
+$nct-green-60: #c6d266ff;
+$nct-green-80: #b3c333ff;
+$nct-green: #a0b400ff; // primary1 500
+
+$nct-blue-20: #d6e3f3ff;
+$nct-blue-45: #a3c0e4ff;
+$nct-blue-60: #84abdbff;
+$nct-blue-80: #5b8fcfff;
+$nct-blue: #3273c3ff; // primary2 500
+
+$nct-dark-blue-20: #ccd1e2ff;
+$nct-dark-blue-45: #8c97beff;
+$nct-dark-blue-60: #6674a8ff;
+$nct-dark-blue-80: #33468bff;
+$nct-dark-blue: #00186eff; // primary3 500
+
+$nct-grey-20: #e6e6e6ff;
+$nct-grey-45: #c6c6c6ff;
+$nct-grey-60: #b3b3b3ff;
+$nct-grey-80: #9a9a9aff;
+$nct-grey: #818181ff; // primary4 500
+
+// ####################
+// ### OTHER COLORS ###
+// ####################
+
+$alert-red: #f42a41ff; // alerts danger
+$accept-green: #009933ff; // alerts success
+
+// $$ pastel colors, for form feedback and ranking
+$accepting-green: #00993333; // alerts accept
+$warning-yellow: #ffee00a2; // alerts warning
+$rejected-red: #ff000033; // accent 100
+$revision-blue: #3273c333; // alerts info
+
+// #####################
+// ### COLOR PALETTE ###
+// #####################
+
+$colors: (
+  primary1: (
+    100: $nct-green-20,
+    200: $nct-green-45,
+    300: $nct-green-60,
+    400: $nct-green-80,
+    500: $nct-green,
+  ),
+  primary2: (
+    100: $nct-blue-20,
+    200: $nct-blue-45,
+    300: $nct-blue-60,
+    400: $nct-blue-80,
+    500: $nct-blue,
+  ),
+  primary3: (
+    100: $nct-dark-blue-20,
+    200: $nct-dark-blue-45,
+    300: $nct-dark-blue-60,
+    400: $nct-dark-blue-80,
+    500: $nct-dark-blue,
+  ),
+  primary4: (
+    100: $nct-grey-20,
+    200: $nct-grey-45,
+    300: $nct-grey-60,
+    400: $nct-grey-80,
+    500: $nct-grey,
+  ),
+  secondary1: (
+    100: #ffffffff,
+    150: #f0f0f0ff,
+    500: #323232ff,
+    900: #000000ff,
+  ),
+  alerts: (
+    info: #d6e3f3ff,
+    success: $accept-green,
+    accept: $accepting-green,
+    warning: $warning-yellow,
+    danger: $alert-red,
+  ),
+  accent: (
+    100: #ff000033,
+    150: #f42a41ff,
+
+    400: #ffee00a2,
+
+    600: #00993333,
+    650: #009933ff,
+
+    700: #3273c333,
+  ),
+);

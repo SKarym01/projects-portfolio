@@ -1,0 +1,34 @@
+@use 'sass:math';
+@use 'variables' as *;
+
+@function toRem($values) {
+  $rem-values: ();
+  $count: length($values);
+  @if $count == 1 {
+    @return valueToRem($values);
+  }
+
+  @for $i from 1 through $count {
+    $rem-values: append($rem-values, valueToRem(nth($values, $i)));
+  }
+
+  @return $rem-values;
+}
+
+@function valueToRem($value) {
+  @return math.div($value, 16px) * 1rem;
+}
+
+// color map
+@function get-color($category, $shade: 500) {
+  @if map-has-key($colors, $category) {
+    $color-group: map-get($colors, $category);
+    @if map-has-key($color-group, $shade) {
+      @return map-get($color-group, $shade);
+    }
+    @error "Shade `#{$shade}` not found in `#{$category}`.";
+  } @else {
+    @error "Category `#{$category}` not found.";
+  }
+  @return null;
+}

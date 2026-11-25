@@ -1,0 +1,189 @@
+<div class="container">
+  <div class="form-container">
+    <div class="header-div">
+      <div class="header-content">
+        <h2 class="header-text">New Email Template</h2>
+      </div>
+      <div class="header-right">
+        <app-button
+          [size]="ButtonSize.Customized"
+          class="back-button"
+          (click)="goBackToStudies()">
+          Back to Templates
+        </app-button>
+      </div>
+    </div>
+
+    <div class="form-and-placeholders">
+      <!-- Form Section -->
+      <div class="form-section">
+        <form [formGroup]="group" class="modern-form">
+          <div class="form-grid">
+            <!-- Title Field -->
+            <div class="form-group">
+              <label for="title">
+                Title
+                <fa-icon
+                  class="fa-xs"
+                  matTooltip="Provide an acronym or abbreviation used to identify the trial."
+                  [matTooltipPosition]="'right'">
+                </fa-icon>
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                formControlName="templateTitle"
+                (focus)="currentField = 'templateTitle'"
+                style="border: 2px solid #d1d1d1; border-radius: 4px; padding: 10px" />
+            </div>
+
+            <!-- Description Field -->
+            <div class="form-group">
+              <label for="description">
+                Description
+                <fa-icon
+                  class="fa-xs"
+                  matTooltip="Provide the description of the trial."
+                  [matTooltipPosition]="'right'"></fa-icon>
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                formControlName="description"
+                (focus)="currentField = 'description'"
+                style="border: 2px solid #d1d1d1; border-radius: 4px; padding: 10px" />
+            </div>
+
+            <!-- Email From Field -->
+            <div class="form-group">
+              <label for="emailFrom">
+                Email From
+                <fa-icon
+                  class="fa-xs"
+                  matTooltip="Provide an acronym or abbreviation used to identify the trial."
+                  [matTooltipPosition]="'right'"></fa-icon>
+              </label>
+              <input
+                type="email"
+                class="form-control"
+                formControlName="emailFrom"
+                (focus)="currentField = 'emailFrom'"
+                style="border: 2px solid #d1d1d1; border-radius: 4px; padding: 10px" />
+            </div>
+
+            <!-- Email To Field -->
+            <div class="form-group">
+              <label for="emailTo">
+                Email To
+                <fa-icon
+                  class="fa-xs"
+                  matTooltip="Provide an acronym or abbreviation used to identify the trial."
+                  [matTooltipPosition]="'right'"></fa-icon>
+              </label>
+              <input
+                type="email"
+                class="form-control"
+                formControlName="emailTo"
+                (focus)="currentField = 'emailTo'"
+                style="border: 2px solid #d1d1d1; border-radius: 4px; padding: 10px" />
+            </div>
+
+            <!-- Subject Line Field -->
+            <div class="form-group full-width">
+              <label for="subjectLine">
+                Subject Line
+                <fa-icon
+                  class="fa-xs"
+                  matTooltip="Provide the subject line for the email template."
+                  [matTooltipPosition]="'right'"></fa-icon>
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                formControlName="subjectLine"
+                (focus)="currentField = 'subjectLine'"
+                style="border: 2px solid #d1d1d1; border-radius: 4px; padding: 10px" />
+            </div>
+
+            <!-- Content Editor -->
+            <div class="form-group full-width editor-group">
+              <label for=" content">Content</label>
+              <div class="nctInfo" *ngIf="!read">
+                <div class="NgxEditor__Wrapper">
+                  <ngx-editor-menu
+                    [editor]="ngxEditor"
+                    [toolbar]="toolbar"></ngx-editor-menu>
+                  <form [formGroup]="group">
+                    <ngx-editor
+                      [editor]="ngxEditor"
+                      formControlName="content"
+                      (selectionChange)="onEditorSelectionChange()"
+                      (focus)="onEditorFocus()">
+                      >
+                    </ngx-editor>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <!-- Save and Cancel Buttons -->
+            <div class="button-group full-width editor-group">
+              <app-button
+                [size]="ButtonSize.Customized"
+                type="button"
+                (click)="onSaveAsDraft()"
+                class="save-btn secondary-btn"
+                [disabled]="isSaving">
+                Save as Draft
+              </app-button>
+              <app-button
+                [size]="ButtonSize.Customized"
+                type="button"
+                (click)="onSaveAndRelease()"
+                class="save-btn secondary-btn"
+                [disabled]="isSaving">
+                Save and Release
+              </app-button>
+              <app-button
+                [size]="ButtonSize.Customized"
+                type="button"
+                (click)="onCancel()"
+                class="cancel-btn secondary-btn">
+                Cancel
+              </app-button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!--  Placeholders List -->
+      <div class="placeholder-section">
+        <h4>Placeholders</h4>
+        <ul class="hierarchical-list">
+          <div
+            *ngFor="let category of categories; let i = index"
+            class="category-container">
+            <div
+              class="category-header"
+              (click)="toggleCategory(i)"
+              (keydown.enter)="toggleCategory(i)"
+              tabindex="0">
+              {{ category.name }}
+              <span>{{ category.expanded ? '▲' : '▼' }}</span>
+            </div>
+
+            <div *ngIf="category.expanded" class="category-items">
+              <button
+                *ngFor="let placeholder of placeholders"
+                class="placeholder-item"
+                (click)="insertPlaceholder(placeholder.key)"
+                [hidden]="placeholder.category !== category.name">
+                {{ placeholder.description }}
+              </button>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

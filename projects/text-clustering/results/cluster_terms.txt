@@ -1,0 +1,48 @@
+Number of Documents: 3526
+Optimal k used: 15
+
+Cluster 0:
+telefon, mail, [name omitted], prof, team, ing, dipl, inn, hochschul, fon
+
+Cluster 1:
+forschung, hochschul, studium, international, studiengang, eig, inhalt, datenschutz, gespeichert, jeweil
+
+Cluster 2:
+dipl, ing, betriebsw, inform, postadress, buroadress, [name omitted], forschung, studium, hochschul
+
+Cluster 3:
+lehr, informat, vita, universitat, medizin, hochschul, studium, prof, forschung, institut
+
+Cluster 4:
+management, sem, mast, bachelor, business, international, englisch, lehrveranstalt, logist, studium
+
+Cluster 5:
+data, purpos, use, university, setting, study, research, servic, off, protection
+
+Cluster 6:
+university, student, https, www, abroad, environmental, cost, studying, information, sem
+
+Cluster 7:
+gmbh, projekt, entwickl, nachhalt, hochschul, forschung, [name omitted], prof, international, studium
+
+Cluster 8:
+system, engineering, vertiefungsricht, ect, fachempfehl, electrical, softwar, mechatron, mast, studium
+
+Cluster 9:
+ringvorles, [name omitted], [name omitted], quantencomputing, liv, schul, gymnasium, mai, campus, info
+
+Cluster 10:
+prof, [name omitted], buroadress, postadress, hochschul, [name omitted], forschung, studium, [name omitted], international
+
+Cluster 11:
+research, conferenc, model, publikation, doi, project, prosit, health, tourism, international
+
+Cluster 12:
+hochschul, [name omitted], [name omitted], studier, inn, neu, projekt, wissenschaft, studium, forschung
+
+Cluster 13:
+labor, bild, hochschul, optisch, ansprechpartn, optik, forschung, matlab, ing, studium
+
+Cluster 14:
+bewerb, studier, hochschul, studium, bitt, ausland, auswahlverfahr, international, partnerhochschul, [name omitted]
+

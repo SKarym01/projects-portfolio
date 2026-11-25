@@ -1,0 +1,107 @@
+[
+  {
+    "question_id": "Q01",
+    "question": "Mit welcher wichtigen Erkrankung wird Radon in Innenräumen in Verbindung gebracht?",
+    "expected_guideline_id": "002-035",
+    "expected_page": 11,
+    "source_file": "002-035l_S1_Radon-in-Innenraeumen_2022-02.pdf"
+  },
+  {
+    "question_id": "Q02",
+    "question": "Welchen Referenzwert für die Radonkonzentration in Innenräumen nennt die Leitlinie (Bq/m³)?",
+    "expected_guideline_id": "002-035",
+    "expected_page": 10,
+    "source_file": "002-035l_S1_Radon-in-Innenraeumen_2022-02.pdf"
+  },
+  {
+    "question_id": "Q03",
+    "question": "Wann soll eine primäre geplante Sectio caesarea in der Regel durchgeführt werden?",
+    "expected_guideline_id": "015-084",
+    "expected_page": 36,
+    "source_file": "015-084k_S3_Sectio-caesarea_2020-06_1_02.pdf"
+  },
+  {
+    "question_id": "Q04",
+    "question": "Wann soll die Antibiotikaprophylaxe bei Sectio caesarea gegeben werden?",
+    "expected_guideline_id": "015-084",
+    "expected_page": 39,
+    "source_file": "015-084k_S3_Sectio-caesarea_2020-06_1_02.pdf"
+  },
+  {
+    "question_id": "Q05",
+    "question": "Wie hoch ist ungefähr das jährliche Schlaganfallrisiko bei asymptomatischer ≥50%iger Carotisstenose laut Leitlinie?",
+    "expected_guideline_id": "004-028",
+    "expected_page": 10,
+    "source_file": "004-028k_extracranielle-Carotisstenose-Diagnostik-Therapie-Nachsorge_2025-02-abgelaufen.pdf"
+  },
+  {
+    "question_id": "Q06",
+    "question": "Wie hoch ist die Prävalenz einer ≥50%igen Carotisstenose in der Bevölkerung (nach NASCET)?",
+    "expected_guideline_id": "004-028",
+    "expected_page": 10,
+    "source_file": "004-028k_extracranielle-Carotisstenose-Diagnostik-Therapie-Nachsorge_2025-02-abgelaufen.pdf"
+  },
+  {
+    "question_id": "Q07",
+    "question": "Welche technische Grundvoraussetzung nennt die Leitlinie für den Einsatz von Telenotfallmedizin?",
+    "expected_guideline_id": "001-037",
+    "expected_page": 10,
+    "source_file": "001-037k_S2e_Telemedizin-in-der-praehospitalen-Notfallmedizin_2025-07.pdf"
+  },
+  {
+    "question_id": "Q08",
+    "question": "Welche Datenübertragung soll bei Nutzung einer telenotfallmedizinischen Anwendung erfolgen?",
+    "expected_guideline_id": "001-037",
+    "expected_page": 7,
+    "source_file": "001-037k_S2e_Telemedizin-in-der-praehospitalen-Notfallmedizin_2025-07.pdf"
+  },
+  {
+    "question_id": "Q09",
+    "question": "Welche erste Maßnahme nennt die Leitlinie bei lebensbedrohlicher Extremitätenblutung?",
+    "expected_guideline_id": "001-043",
+    "expected_page": 2,
+    "source_file": "001-043k_S2k_Katastrophenmedizinische-praehospitale-Behandlungsleitlinie_2023-10.pdf"
+  },
+  {
+    "question_id": "Q10",
+    "question": "Welche Initialdosis für Fentanyl nennt die Leitlinie zur Analgesie bei Erwachsenen (unter Erhalt der Spontanatmung)?",
+    "expected_guideline_id": "001-043",
+    "expected_page": 61,
+    "source_file": "001-043k_S2k_Katastrophenmedizinische-praehospitale-Behandlungsleitlinie_2023-10.pdf"
+  },
+  {
+    "question_id": "Q11",
+    "question": "Welche Basisdiagnostik empfiehlt die Leitlinie bei Synkope im Kindes- und Jugendalter?",
+    "expected_guideline_id": "023-004",
+    "expected_page": 8,
+    "source_file": "023-004l_S2k_Synkope_im_Kindes-_und_Jugendalter_2025-03-abgelaufen.pdf"
+  },
+  {
+    "question_id": "Q12",
+    "question": "Welche EKG-Auffälligkeiten nennt die Leitlinie als Warnzeichen bei Synkope im Kindes- und Jugendalter?",
+    "expected_guideline_id": "023-004",
+    "expected_page": 12,
+    "source_file": "023-004l_S2k_Synkope_im_Kindes-_und_Jugendalter_2025-03-abgelaufen.pdf"
+  },
+  {
+    "question_id": "Q13",
+    "question": "Welche klinischen Tests nennt die Leitlinie zur Diagnosestellung eines subacromialen Impingements (MOI)?",
+    "expected_guideline_id": "033-056",
+    "expected_page": 13,
+    "source_file": "033-056l_S2e_subacromiales_Impingement_2021-12_01.pdf"
+  },
+  {
+    "question_id": "Q14",
+    "question": "Welche Bildgebung empfiehlt die Leitlinie zur Abklärung eines subacromialen Impingementsyndroms?",
+    "expected_guideline_id": "033-056",
+    "expected_page": 16,
+    "source_file": "033-056l_S2e_subacromiales_Impingement_2021-12_01.pdf"
+  },
+  {
+    "question_id": "Q15",
+    "question": "Welche methodische Grundlage beschreibt der Evidenzreport zur S3-Leitlinie Urtikaria für die Aktualisierung (z.B. systematische Reviews, Meta-Analysen, GRADE)?",
+    "expected_guideline_id": "013-028",
+    "expected_page": 2,
+    "source_file": "013-028e_S3_Klassifikation-Diagnostik-Therapie-Urtikaria_2022-04.pdf"
+  }
+]

@@ -1,0 +1,9 @@
+@use 'styles' as *;
+
+.body {
+  width: 100%;
+  max-width: toRem(1200px);
+  margin: toRem(16px) auto;
+  height: 100%;
+  @include flex-alignment(column, flex-start, center);
+}

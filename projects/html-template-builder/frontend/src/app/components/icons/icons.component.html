@@ -1,0 +1,66 @@
+@if (size) {
+  <ng-container class="icon" [ngSwitch]="name">
+    <svg
+      [ngClass]="color"
+      class="svg"
+      *ngSwitchCase="'home'"
+      [attr.width]="size"
+      [attr.height]="size"
+      [attr.fill]="color"
+      viewBox="0 0 24 24">
+      <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+    </svg>
+
+    <svg
+      [ngClass]="color"
+      class="svg"
+      *ngSwitchCase="'error'"
+      [attr.width]="size"
+      [attr.height]="size"
+      [attr.fill]="color"
+      viewBox="0 0 24 24">
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM11 5C11 4.44771 11.4477 4 12 4C12.5523 4 13 4.44772 13 5V15C13 15.5523 12.5523 16 12 16C11.4477 16 11 15.5523 11 15V5ZM12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20C12.5523 20 13 19.5523 13 19C13 18.4477 12.5523 18 12 18Z" />
+    </svg>
+
+    <svg
+      *ngSwitchCase="'print'"
+      [ngClass]="color"
+      class="svg"
+      [attr.width]="size"
+      [attr.height]="size"
+      viewBox="0 0 24 24"
+      stroke="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M20.5 17.5V19C20.5 21.7614 18.2614 24 15.5 24H6.5C4.84315 24 3.5 22.6569 3.5 21V17.75H5.5V21C5.5 21.5523 5.94772 22 6.5 22H15.5C17.1569 22 18.5 20.6569 18.5 19V17.5H20.5Z"
+        stroke="none" />
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M3.5 7.75L3.5 5C3.5 2.23857 5.73858 -1.29048e-06 8.5 -1.04907e-06L17.5 -2.62268e-07C19.1569 -1.17422e-07 20.5 1.34315 20.5 3L20.5 7.45455L18.5 7.45455L18.5 3C18.5 2.44772 18.0523 2 17.5 2L8.5 2C6.84315 2 5.5 3.34314 5.5 5L5.5 7.75L3.5 7.75Z"
+        stroke="none" />
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M0 18V9H24V18H18.5V15.9429H5.5V18H0ZM20.835 11.0572C20.2827 11.0572 19.835 11.5049 19.835 12.0572V12.6286C19.835 13.1809 20.2827 13.6286 20.835 13.6286H21.4382C21.9905 13.6286 22.4382 13.1809 22.4382 12.6286V12.0572C22.4382 11.5049 21.9905 11.0572 21.4382 11.0572H20.835Z"
+        stroke="none" />
+    </svg>
+
+    <svg
+      *ngSwitchCase="'edit'"
+      [ngClass]="color"
+      class="svg"
+      [attr.width]="size"
+      [attr.height]="size"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M16.293 2.293a1 1 0 0 1 1.414 0l4 4a1 1 0 0 1 0 1.414l-13 13A1 1 0 0 1 8 21H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 .293-.707l13-13zM5 16.414V19h2.586l12-12L17 4.414l-12 12z" />
+    </svg>
+  </ng-container>
+}

@@ -1,0 +1,7 @@
+# Import-derived inventory; not a tested lockfile.
+numpy
+scipy
+scikit-learn
+nltk
+matplotlib
+

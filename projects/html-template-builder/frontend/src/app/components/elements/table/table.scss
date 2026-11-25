@@ -1,0 +1,45 @@
+@use 'styles' as *;
+
+$table-border: 1px solid get-color(primary4, 100);
+$background-even: (get-color(secondary1, 150));
+$background-odd: get-color(secondary1, 100);
+$background-hover: rgba(get-color(primary2, 100), 0.5);
+$background-hover-state: scale(1.1);
+$header-font-color: get-color(primary2, 500);
+
+@mixin table-border-base {
+  border-collapse: collapse;
+}
+
+@mixin table {
+  width: 100%;
+  @include table-border-base;
+}
+
+@mixin table-header {
+  text-align: left;
+  color: $header-font-color;
+  padding: toRem(8px 8px);
+  border-bottom: $table-border;
+}
+
+@mixin table-row {
+  &:nth-child(even) {
+    background-color: $background-even;
+  }
+
+  &:nth-child(odd) {
+    background-color: $background-odd;
+  }
+
+  &:hover:not(:has(th)) {
+    box-shadow: 4px 4px 10px get-color(secondary1, 500);
+    transform: rotateX(5deg);
+  }
+}
+
+@mixin table-data {
+  @include table-border-base;
+  padding: toRem(4px 16px);
+  min-width: toRem(150px);
+}

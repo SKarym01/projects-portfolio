@@ -1,0 +1,10 @@
+<div class="card">
+  @if (headerText) {
+    <div class="card__header">
+      <h3>{{ headerText }}</h3>
+    </div>
+  }
+  <div class="card__content">
+    <ng-content></ng-content>
+  </div>
+</div>

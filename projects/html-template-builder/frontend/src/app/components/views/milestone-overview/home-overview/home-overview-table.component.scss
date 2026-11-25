@@ -1,0 +1,63 @@
+@use 'styles' as *;
+
+.table__data,
+.table__header {
+  max-width: toRem(124px);
+  min-width: toRem(115px);
+  text-align: center;
+}
+
+.table__data--status,
+.table__data--action {
+  height: auto;
+  @include flex-alignment(row, center, baseline);
+}
+
+table tr td,
+table tr th {
+  padding: 12px 19px;
+}
+.table__data--action {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+mat-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+}
+.centered-dialog {
+  .mat-dialog-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 20px;
+  }
+}
+
+app-button {
+  ::ng-deep .mat-icon {
+    display: inline-flex;
+    vertical-align: middle;
+  }
+}
+.table-row--clickable {
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+}
+
+.table__data--action {
+  display: flex;
+  gap: 8px;
+}

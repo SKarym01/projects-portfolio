@@ -1,0 +1,3 @@
+model,accuracy,sensitivity,specificity,f1,tp,fn,fp,tn,ms_per_image
+ResNet-18,0.868,0.78,0.9266666666666666,0.8253968253968254,156,44,22,278,5.81
+ViT+LoRA,0.882,0.81,0.93,0.8459530026109661,162,38,21,279,7.29

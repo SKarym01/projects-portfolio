@@ -1,0 +1,7 @@
+# Import-derived inventory; no validated original environment lockfile was supplied.
+tensorflow
+opencv-python
+numpy
+matplotlib
+scikit-learn
+

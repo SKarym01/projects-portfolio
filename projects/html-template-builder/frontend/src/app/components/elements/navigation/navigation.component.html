@@ -1,0 +1,16 @@
+<nav class="nav">
+  <li class="nav__item" [class.active]="isActiveRoute()">
+    <a>
+      <fa-icon [icon]="['fas', 'bookmark']"></fa-icon>
+      {{ 'Overview' }}
+    </a>
+  </li>
+
+  <app-button
+    *ngIf="nctIitPortfolioUrl"
+    class="align-right"
+    [size]="ButtonSize.MEDIUM"
+    (click)="navigateToNewTemplate()">
+    Studies Overview
+  </app-button>
+</nav>
