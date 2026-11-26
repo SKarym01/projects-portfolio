@@ -1,0 +1,20 @@
+# Keep local datasets and generated artifacts out of version control.
+data/
+data_regex/
+outputs/
+output/
+models/
+checkpoints/
+*.jsonl
+*.xlsx
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.safetensors
+.env
+.env.*
+!.env.example
+__pycache__/
+.ipynb_checkpoints/
+.venv/

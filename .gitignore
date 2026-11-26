@@ -35,7 +35,6 @@ __MACOSX/
 **/all_letters*.csv
 **/classification_report_entity_types.csv
 projects/cnn-object-counting/test/
-projects/clinical-text-deidentification/
 projects/naive-bayes-java/src/test/resources/*
 !projects/naive-bayes-java/src/test/resources/README.md
 projects/text-clustering/app/output/

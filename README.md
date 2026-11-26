@@ -48,6 +48,12 @@ Processes UIMA/XMI clinical annotations, prepares structured training examples a
 
 **Technologies:** Transformers, Unsloth, PEFT/LoRA, TRL, Pydantic, DKPro Cassis
 
+### [Clinical Text De-identification](projects/clinical-text-deidentification/README.md)
+
+Explores regex-assisted and LLM-based anonymization and pseudonymization of German clinical text. The public project contains source notebooks and aggregate results only; the corpus, document-level outputs and reversible mappings are not included. Reported scores come from an evaluator with documented limitations.
+
+**Technologies:** Python, regular expressions, Transformers, PyTorch, pandas, span-based evaluation
+
 ### [Cost-Sensitive Classification](projects/cost-sensitive-classification/README.md)
 
 Compares logistic regression and Gaussian Naive Bayes under an explicit campaign decision-cost model. It implements stratified sampling, 50-point probability-threshold searches and profit-based threshold plots.
@@ -63,6 +69,7 @@ Compares logistic regression and Gaussian Naive Bayes under an explicit campaign
 | Diabetic Retinopathy Classification | Binary ResNet-18 and LoRA-adapted ViT pipeline with checkpointing and error analysis | PyTorch, Transformers, PEFT, torchvision | 500-image test: ViT+LoRA 88.20% accuracy vs. ResNet-18 86.80% | [View project](projects/diabetic-retinopathy-classification/README.md) |
 | Medical Guideline RAG | PDF ingestion, chunking, vector retrieval and local answer generation | LangChain, Chroma, BGE-M3, Ollama | 93.33% guideline, 20.00% page and 13.33% passage hit rates | [View project](projects/medical-guideline-rag/README.md) |
 | Clinical Entity Extraction | UIMA/XMI parsing, structured data preparation and LoRA language-model adaptation | Unsloth, Transformers, PEFT, TRL, Pydantic | Recorded entity F1 varies from 0.00 to 0.93; methodology limitations preserved | [View project](projects/clinical-entity-extraction/README.md) |
+| Clinical Text De-identification | Regex-assisted and LLM-based anonymization and pseudonymization workflows | Python, Transformers, PyTorch, pandas | Aggregate scores retained with evaluator limitations; no source corpus or document-level output included | [View project](projects/clinical-text-deidentification/README.md) |
 | Compact CNN Object Counting | Small 4,881-parameter CNN for regression of object counts from images | TensorFlow/Keras, OpenCV, NumPy | Reported test MAE 0.8804 objects/image | [View project](projects/cnn-object-counting/README.md) |
 | Cost-Sensitive Classification | Resampling and threshold sweeps for two probabilistic classifiers | pandas, scikit-learn, NumPy | Modular campaign-cost experiment; no unverified final profit claim | [View project](projects/cost-sensitive-classification/README.md) |
 | Text Clustering | Custom cosine-distance clustering with TF-IDF preprocessing and term interpretation | NumPy, SciPy, scikit-learn, NLTK | 3,526-document corpus clustered into 15 explicitly selected themes | [View project](projects/text-clustering/README.md) |
@@ -80,7 +87,7 @@ Compares logistic regression and Gaussian Naive Bayes under an explicit campaign
 
 These are university projects, including coursework, collaborative submissions and my bachelor's thesis. Project documentation distinguishes submitted implementations and recorded results from independently rerun experiments. It does not claim sole authorship of group work or present academic prototypes as production systems or clinically validated products.
 
-The clinical-text de-identification project remains excluded from this public repository because unresolved data permissions, credential and evaluation issues remain. The public files are limited to selected source implementations and aggregate, privacy-reviewed evidence.
+The clinical-text de-identification project includes source notebooks and aggregate evidence only. The clinical corpus, reversible mappings, document-level outputs and model artifacts are not included.
 
 ## Explore or reproduce
 
